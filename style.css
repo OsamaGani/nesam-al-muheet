@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.9rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color:white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:crimson;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+body {
+    overflow-x: hidden ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* nav bar design css here */
+nav {
+    width: 100%;
+    height: 70px;
+    background: rgb(207, 205, 205);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 40px;
+   
+
+}
+
+nav .logo {
+    color: crimson;
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+
+}
+
+nav .menubar {
+    height: 100%;
+    
+}
+
+nav .menubar a {
+    color: white;
+    padding-inline: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+
+}
+
+nav .menubar a:hover {
+    color: crimson;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.dropdown {
+    position: relative;
+    height: 100%;
+    display: inline-flex;
+    width: max-content !important;
+    align-items: center;
+
+}
+
+.dropdown .content {
+    position: absolute;
+    border: 2px solid rgb(212, 79, 79);
+    top: 70px;
+    display: none;
+    background: rgb(61, 56, 56);
+    width: 210px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dropdown .content a {
+    display: block;
+    font-size: 15px;
+
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+
+/* home section css design here */
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#home .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home .content p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#home .content h1 {
+    padding-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+#home .content span {
+    color: crimson;
+}
+
+
+#home .content a {
+    border: 2px solid black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background: crimson;
+    border: none;
+
+}
+
+#home .content a:hover {
+    color: crimson;
+    background: white;
+    transition: all 0.7s;
+}
+
+/* about section design here */
+#about {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#about .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#about .container .box1 {
+    background: #dcdbdb;
+    flex-basis: 50%;
+    border: 2px solid black;
+    padding: 40px 25px 30px 30px;
+    text-align: justify;
+    color: black;
+    font-size: 17px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+#about .container .box1 img {
+    width: 100%;
+
+}
+
+
+#about .container .box h1,
+p {
+    padding-bottom: 20px;
+
+}
+
+#about .container .box1 a {
+    color: white;
+    background: crimson;
+    font-size: 17px;
+    border: 2px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#about .container .box span {
+    color: crimson;
+}
+
+#about .container .box h1 {
+    font-weight: 400;
+}
+
+#about .container .box1 a:hover {
+    background: rgb(36, 34, 34);
+    transition: all 0.7s;
+}
+
+#about .container2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+#about .container2 .box {
+    background: rgb(230, 227, 227);
+    flex-basis: 50%;
+    padding: 60px;
+    flex-wrap: wrap;
+    text-align: justify;
+    color: black;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#about .container2 .box8 {
+    background: rgb(210, 203, 203);
+    flex-basis: 50%;
+    padding: 60px;
+    flex-wrap: wrap;
+    text-align: justify;
+    color: black;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#about .container2 .box h1 {
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+/* sevice css design here */
+
+#services .container {
+    height: 100vh;
+    background: url('service.webp'), rgb(70, 69, 69);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#services .container .contentt {
+    width: 100%;
+    max-width: 520px;
+    color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#services .container .contentt .heading {
+    font-size: 35px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* meadia query for navbar */
+
+@media (max-width:700px) {
+    nav {
+        width: 100%;
+        padding-inline: 5px;
+
+    }
+    .dropdown {
+       
+        height:15%;
+      
+    }
+   
+    #home .container .content {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #home .container .content p {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+
+    #home .container .content h1 {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+
+    #home .container .content h1 {
+        font-size: 30px;
+    }
+
+    #home .container .content a {
+        font-size: 17px;
+    }
+
+    #about .container {
+        width: 100%;
+        flex-direction: column;
+
+
+    }
+    
+
+    #about .container .box {
+        background:white;
+    }
+
+    #about .container .box p {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    #about .container2 {
+        width: 100%;
+        flex-direction: column;
+
+
+    }
+
+    #about .container2 .box {
+        padding: 10px 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    #about .container2 .box p {
+        padding-bottom: 2px;
+    }
+
+    #about .container2 .box h1 {
+        padding-bottom: 0px;
+        color: crimson;
+    }
+
+    #about .container .box2 {
+        padding: 0;
+    }
+
+    #services .container .contentt {
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+    #services .container .contentt .heading {
+        font-weight: 400;
+
+    }
+    
+}
+
+/* images css design here */
+#projects .container3 .images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+}
+
+#projects .container3 .images .img {
+    border: 2px solid black;
+    flex-basis: 16%;
+    border: none;
+}
+
+#projects .container3 .images .img img {
+    width: 100%;
+    background-size: cover;
+}
+
+#projects .container3 h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#projects .container3 .span {
+    color: crimson;
+}
+
+footer {
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+footer .container1 {
+    flex-basis: 25%;
+    padding: 40px 40px;
+    color: white;
+}
+
+footer .container1 a {
+    display: block;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer .container1 h1 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+}
+
+footer .container1 i {
+    font-size: 10px;
+    color: rgb(250, 239, 239);
+    font-weight: 200;
+}
+
+footer .container1 .icon {
+    font-size: 17px;
+    color: crimson;
+}
+
+footer .container1 span {
+    font-weight: 300;
+}
+
+footer .deve span {
+    color: crimson;
+}
+
+footer .deve {
+    width: 100%;
+    background: rgb(72, 74, 72);
+    padding: 10px 0px 10px 30px;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+footer .container1 a:hover {
+    color: crimson;
+    padding-left: 10px;
+    transition: all 0.7s;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    display: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* menu bar design here start */
+.bar {
+    color: white;
+    font-size: 30px;
+    display: none;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* menu media query here */
+
+@media (max-width:700px) {
+    .bar {
+        display: block;
+    }
+    #about .container .box h1,
+    p {
+        padding-bottom: 10px;
+    
+    }
+    nav {
+        position: fixed;
+        z-index: 99;
+    }
+
+    nav .menubar {
+        position:fixed;
+        top: 70px;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        right: -100%;
+        transition: all 0.3s;
+        background-color: rgb(193, 234, 245);
+        padding-top: 30px;
+    }
+
+    nav .menubar a {
+        color: white;
+        font-size: 17px;
+        flex-direction: column;
+        display: flex;
+        padding: 15px 0;
+    }
+    
+}
+
+/* Responsive image here */
+
+@media (max-width:700px) {
+    #projects .container3 .images {
+        flex-direction: column;
+
+    }
+
+    #projects .container3 .images .img {
+        width: 150px;
+    }
+    #projects .container3 h1{
+        font-size:25px;
+        
+    }
+    footer {
+        width: 100%;
+        flex-direction: column;
+
+
+    }
+
+    footer .container1 h1 {
+        font-weight: 300px;
+        color: red;
+    }
+
+    footer .container1 {
+        padding: 10px 40px;
+    }
+
+    footer .container1 a {
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    footer .deve {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    nav #icon {
+        display: block;
+    }
+}

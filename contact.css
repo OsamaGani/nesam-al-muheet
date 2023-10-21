@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container .wrapper{
+    background-image: url('contact.webp');
+    height: 450px;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.container .wrapper h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+}
+.container .parent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   padding: 40px;
+   gap: 10px;
+}
+.container .parent .child{
+    flex-basis: 50%;
+    
+    
+}
+.container .parent .child .h1 {
+    font-size: 20px;
+   
+}
+.container .parent .child span{
+    color: crimson;
+}
+.container .parent .child .input-box{
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+}
+.container .parent .child .input-box input{
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 400;
+
+}
+.container .parent .child textarea{
+        height: 100px;
+        width: 100%;
+        border-radius: 5px;
+        padding:10px 0 5px 10px;
+        font-size: 17px;
+        outline: none;
+}
+.container .parent .child .button{
+   margin: 10px 20px ;
+   font-size: 17px;
+   outline: none;
+   border-radius: 5px;
+   border: none;
+   background:crimson;
+   color: white;
+   cursor: pointer;
+   padding: 10px 20px;
+    
+}
+.container .parent .child .button:hover{
+    background: rgb(2, 22, 2);
+    transition: all 0.7s;
+}
+.container .parent .child .heading{
+    margin-bottom: 20px;
+}
+.container .parent .child h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+.container .parent .child img{
+    /* padding-top:30px; */
+    width: 200px;
+}
+.container .parent .child span{
+    color: crimson;
+}
+.container .parent .child i{
+    color: crimson;
+    font-size: 25px;
+}
+.map{
+    max-height: 100vh;
+    display: flex;
+}
+.map iframe{
+    height:500px;
+    width: 100%;
+    padding: 0px 20px 30px 20px;
+}
+
+/* meadia query here */
+
+@media (max-width:700px){
+        .container .parent{
+            width: 100%;
+            flex-direction: column;
+           align-items: center;
+           padding:15px 10px;
+        }
+        .container .parent .form{
+            width: 100%;
+            padding:0;
+        }
+        .container .parent .address{
+            /* text-align: center; */
+            padding: 20px;
+            text-align: justify;
+        }
+        /* .container .parent .form ,h1{
+                text-align: center;
+        } */
+        
+        .container .parent .child .button{
+            margin: 0;
+        }
+}
